@@ -23,6 +23,8 @@ Partial Class frmCampusSelfie
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.picFinalistCheer = New System.Windows.Forms.PictureBox()
+        CType(Me.picFinalistCheer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -35,20 +37,31 @@ Partial Class frmCampusSelfie
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "Vote for the Best Campus Selfie"
         '
+        'picFinalistCheer
+        '
+        Me.picFinalistCheer.Location = New System.Drawing.Point(42, 58)
+        Me.picFinalistCheer.Name = "picFinalistCheer"
+        Me.picFinalistCheer.Size = New System.Drawing.Size(185, 150)
+        Me.picFinalistCheer.TabIndex = 1
+        Me.picFinalistCheer.TabStop = False
+        '
         'frmCampusSelfie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(414, 356)
+        Me.Controls.Add(Me.picFinalistCheer)
         Me.Controls.Add(Me.lblHeading)
         Me.ForeColor = System.Drawing.Color.Firebrick
         Me.Name = "frmCampusSelfie"
         Me.Text = "Vote for the Best Campus Selfie"
+        CType(Me.picFinalistCheer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lblHeading As Label
+    Friend WithEvents picFinalistCheer As PictureBox
 End Class
